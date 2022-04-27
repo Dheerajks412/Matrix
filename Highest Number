@@ -1,0 +1,9 @@
+// "static void main" must be defined in a public class.
+public class Main {
+    public static void main(String[] args) {
+        int arr[] = {55,88,66,32,485,2254,999};
+        int n = arr.length;
+        Arrays.sort(arr);
+        System.out.println("Highest Number is " + arr[n-1]);
+    }
+}
