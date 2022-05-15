@@ -1,0 +1,42 @@
+class Main{
+static Stack<Integer> reverseStack(Stack<Integer> s) {
+   // initialize extra stack
+   Stack<Integer> extraStack = new Stack<Integer>();
+   int n = s.size();
+ 
+   for (int i = 0; i < n; i++) {
+     // access the top element
+     int element = s.peek();
+     // remove the top element
+     s.pop();
+     // push the element into the extra stack
+     extraStack.push(element);
+   }
+ 
+   // return the extraStack which is reversed
+   return extraStack;
+}
+public static void main(String args[]) {
+  // initialize stack
+  Stack<Integer> s = new Stack<Integer>();
+  // push elements
+  s.push(1);  s.push(2);
+  s.push(3);
+  s.push(4);
+    s.push(5);
+    s.push(6);
+    s.push(7);
+ 
+  // print elements before reversing
+  System.out.println("Stack before reversing:");
+  System.out.println(s);
+ 
+  // reverse stack using reverseStack()
+  s = reverseStack(s); // using stacks
+  
+ 
+  // print elements after reversing
+  System.out.println("Stack after reversing:");
+  System.out.println(s);
+}
+}
