@@ -1,6 +1,3 @@
-import java.util.*;
-
-// Linked List Node
 class Node {
 	int data;
 	Node next;
@@ -11,7 +8,7 @@ class Node {
 	}
 }
 
-class GFG {
+class Main {
 	// utility function to insert node in the list
 	static Node push(Node head, int val)
 	{
@@ -102,7 +99,7 @@ class GFG {
 		head = push(head, 7);
 		head = push(head, 8);
 		head = push(head, 9);
-
+        
 		System.out.println("Given Linked List");
 		print(head);
 		System.out.println("Reversed list");
